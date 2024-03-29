@@ -13,13 +13,10 @@ import { HiArrowRight } from "react-icons/hi";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { HiOutlineArrowCircleRight } from "react-icons/hi";
 
-
-
 function App() {
   return (
     <>
       <div className="flex mx-3">
-
         {/* left sidebar */}
         <div className="w-1/8">
           <div className="m-[2rem] ">
@@ -94,13 +91,12 @@ function App() {
           </div>
         </div>
 
-
         {/* middle */}
         <div className="w-2/3">
           {/* location and search */}
-          <div className="flex">
+          <div className="flex ">
             {/* location */}
-            <div className="flex justify-between items-center mt-12 text-xl bg-slate-100 w-1/3 h-[52px] p-3 rounded-full">
+            <div className="flex justify-between items-center mt-12 text-xl bg-slate-100  h-[52px] p-3 rounded-full  min-w-52 ">
               <div className="flex items-center">
                 <FaLocationDot
                   className="text-lg"
@@ -116,7 +112,7 @@ function App() {
             </div>
 
             {/* search box */}
-            <div className="flex justify-between items-center mt-12 text-2xl bg-slate-100 h-[52px] w-2/3 p-3 rounded-xl ml-8">
+            <div className="flex justify-between items-center mt-12 text-2xl bg-slate-100 h-[52px] w-2/3 p-3 rounded-xl ml-8 ">
               <div className="flex items-center justify-center">
                 <CiSearch className="text-xl text-black font-medium	" />
                 <div>
@@ -136,9 +132,8 @@ function App() {
 
           {/* buy new , refurbished, flexibly */}
           <div className="flex mt-8 ">
-
-            <div className="bg-gradient-to-r from-[#E9ECFF] to-[#ABB8FF] rounded-xl w-1/3 h-44 ">
-              <div className="text-[#4562FF] font-bold text-2xl p-4 rounded-xl">
+            <div className="bg-gradient-to-r from-[#E9ECFF] to-[#ABB8FF] rounded-xl w-1/3 h-auto ">
+              <div className="text-[#4562FF] font-bold  text-2xl sm:text-sm md:text-2xl p-4 rounded-xl">
                 Buy New
               </div>
               <div className="text-slate-500 p-4 font-medium mt-5">
@@ -146,34 +141,34 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#F9E9FF] to-[#EEABFF] rounded-xl w-1/3 h-44 ml-5">
-              <div className="text-[#CC00FF] p-3 font-bold text-[22px]">
+            <div className="bg-gradient-to-r from-[#F9E9FF] to-[#EEABFF] rounded-xl w-1/3 h-auto ml-5">
+              <div className="text-[#CC00FF] p-3  font-bold text-sm sm:text-sm md:text-2xl  ">
                 Buy Refurbished
               </div>
-              <div className="text-slate-500 p-3 font-medium text-base w-40 mt-8">
+              <div className="text-slate-500 p-3 font-medium text-base w-auto mt-8">
                 Affordable yet Efficient
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#F0FFE9] to-[#D5FFAB] rounded-xl w-1/3 h-44 ml-5">
-              <div className="text-[#1B6700] p-4 font-bold text-2xl">
+            <div className="bg-gradient-to-r from-[#F0FFE9] to-[#D5FFAB] rounded-xl w-1/3 h-auto ml-5 text-wrap">
+              <div className="text-[#1B6700] p-4 font-bold  text-2xl sm:text-sm md:text-2xl">
                 Rent Flexibly
               </div>
-              <div className="text-slate-500 p-4 font-medium mt-5 text-base w-48">
+              <div className="text-slate-500 p-4 font-medium mt-5 text-base text-wrap w-auto">
                 Efficiency without Commitment
               </div>
             </div>
           </div>
 
           {/* Browse by Category */}
-          <div className="flex mt-4 items-center">
-            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] w-56 h-[1px]"></div>
+          <div className="flex mt-4 items-center w-full">
+            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] flex-1 h-[1px]"></div>
             <div className="font-bold text-3xl m-3">Browse by Category</div>
-            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] w-56 h-[1px]"></div>
+            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] flex-1 h-[1px]"></div>
           </div>
 
           {/* category */}
-          <div className="flex">
+          <div className="flex justify-around">
             <div className="flex flex-col items-center m-3 ml-5">
               <img
                 src="./public/assets/img1.png"
@@ -208,13 +203,13 @@ function App() {
           </div>
 
           {/* single line */}
-          <div className="w-[700px] h-[1px] text-[#CCCCCC] bg-slate-300 m-4"></div>
+          <div className="w-full h-[1px] text-[#CCCCCC] bg-slate-300 m-4"></div>
 
           {/* Specialist Favorites */}
-          <div className="flex mt-3 items-center">
-            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] w-56 h-[1px]"></div>
+          <div className="flex mt-3 items-center w-full">
+            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] flex-1 h-[1px]"></div>
             <div className="font-bold text-3xl m-3">Specialist Favorites</div>
-            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] w-56 h-[1px]"></div>
+            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] flex-1 h-[1px]"></div>
           </div>
 
           {/* favorites */}
@@ -300,18 +295,44 @@ function App() {
               </div>
             </div>
           </div>
+           {/* single line */}
+           <div className="w-full h-[1px] text-[#CCCCCC] bg-slate-300 m-4"></div>
+
 
           {/* top selling */}
-          <div className="flex mt-3 items-center">
-            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] w-56 h-[1px]"></div>
+          <div className="flex mt-3 items-center w-full">
+            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] flex-1 h-[1px]"></div>
             <div className="font-[500] text-3xl m-3">Top Selling</div>
-            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] w-56 h-[1px]"></div>
+            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] flex-1 h-[1px]"></div>
           </div>
 
           {/* top selling component */}
           <div className="flex">
-            <div className="bg-[#F6F6F6] w-1/3 h-[405px] rounded-[12px] mr-8">
-              <div className="h-[207px] p-3">
+            <div className="bg-[#F6F6F6] w-1/3 h-auto rounded-[12px] mr-8">
+              <div className="h-auto p-3">
+                <img
+                  src="./public/assets/img8.png"
+                  className="object-cover h-auto w-full rounded-[16px]"
+                />
+              </div>
+              {/* <p className="w-[139px] h-[24px] font-[600] text-lg m-3">
+                Knee Bandage
+              </p>
+              <p className="w-[139px] h-[24px] font-[400] text-lg m-3">
+                Starts from
+              </p>
+              <p className="w-[155px] h-[30px] font-[500] text-2xl m-3">
+                ₹100 - ₹1,300
+              </p> */}
+              <div className="flex justify-center">
+                <button className="border border-[#9B5DFF] w-[217px] p-[12px] rounded-[8px] text-[#9B5DFF] font-medium text-2xl">
+                  Explore
+                </button>
+              </div>
+            </div>
+
+            <div className="bg-[#F6F6F6] w-1/3 h-auto rounded-[12px] mr-8">
+              <div className="h-auto p-3">
                 <img
                   src="./public/assets/img8.png"
                   className="object-cover h-full w-full rounded-[16px]"
@@ -333,31 +354,8 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-[#F6F6F6] w-1/3 h-[405px] rounded-[12px] mr-8">
-              <div className="h-[207px] p-3">
-                <img
-                  src="./public/assets/img8.png"
-                  className="object-cover h-full w-full rounded-[16px]"
-                />
-              </div>
-              {/* <p className="w-[139px] h-[24px] font-[600] text-lg m-3">
-                Knee Bandage
-              </p>
-              <p className="w-[139px] h-[24px] font-[400] text-lg m-3">
-                Starts from
-              </p>
-              <p className="w-[155px] h-[30px] font-[500] text-2xl m-3">
-                ₹100 - ₹1,300
-              </p> */}
-              <div className="flex justify-center">
-                <button className="border border-[#9B5DFF] w-[217px] p-[12px] rounded-[8px] text-[#9B5DFF] font-medium text-2xl">
-                  Explore
-                </button>
-              </div>
-            </div>
-
-            <div className="bg-[#F6F6F6] w-1/3 h-[405px] rounded-[12px] mr-8">
-              <div className="h-[207px] p-3">
+            <div className="bg-[#F6F6F6] w-1/3 h-auto rounded-[12px] mr-8">
+              <div className="h-auto p-3">
                 <img
                   src="./public/assets/img8.png"
                   className="object-cover h-full w-full rounded-[16px]"
@@ -381,13 +379,13 @@ function App() {
           </div>
 
           {/* single line */}
-          <div className="w-[700px] h-[1px] text-[#CCCCCC] bg-slate-300 m-8"></div>
+          <div className="w-full h-[1px] text-[#CCCCCC] bg-slate-300 m-8"></div>
 
           {/* Featured Brand */}
-          <div className="flex mt-3 items-center">
-            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] w-56 h-[1px]"></div>
+          <div className="flex mt-3 items-center w-full">
+            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] flex-1 h-[1px]"></div>
             <div className="font-[500] text-3xl m-3">Featured Brand</div>
-            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] w-56 h-[1px]"></div>
+            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] flex-1 h-[1px]"></div>
           </div>
 
           {/* Brand logo */}
@@ -422,17 +420,17 @@ function App() {
           </div>
 
           {/* single line */}
-          <div className="w-[700px] h-[1px] text-[#CCCCCC] bg-slate-300 m-8"></div>
+          <div className="w-full h-[1px] text-[#CCCCCC] bg-slate-300 m-8"></div>
 
           {/* Popular activities */}
-          <div className="flex mt-3 items-center">
-            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] w-56 h-[1px]"></div>
-            <div className="font-[500] text-3xl m-3">Popular Activities</div>
-            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] w-56 h-[1px]"></div>
+          <div className="flex mt-3 items-center w-full">
+            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#808080] flex-1 h-[1px]"></div>
+            <div className="font-[500]  text-3xl m-3">Popular Activities</div>
+            <div className="bg-gradient-to-r from-[#808080] to-[#FFFFFF] flex-1 h-[1px]"></div>
           </div>
 
           {/* Activites */}
-          <div className="flex mb-[10rem]">
+          <div className="flex mb-[10rem] justify-between">
             <div className="h-[335px] w-[259px] bg-[#F6F6F6] mt-4 rounded-[16px] mr-8 ">
               <div>
                 <div className="h-[260px]">
@@ -491,18 +489,18 @@ function App() {
                 </div>
               </div>
             </div>
-
           </div>
           {/* last div */}
         </div>
 
-
         {/* right sidebar */}
         <div className="flex w-1/6">
           <div className=" flex flex-col ">
-
             <div className=" mt-[3rem] flex justify-end">
-              <img src="/assets/img15.png" className="rounded-full w-[56px] h-[56px]" />
+              <img
+                src="/assets/img15.png"
+                className="rounded-full w-[56px] h-[56px]"
+              />
             </div>
 
             <div className="w-full h-[52px] border-[#CCCCCC] border-[1px] rounded-[16px] flex items-center justify-between my-7 ml-2">
@@ -512,12 +510,12 @@ function App() {
                   Help Center
                 </div>
               </div>
-              <div><HiOutlineArrowCircleRight className="size-[24px] text-[#9B5DFF] mr-2" /></div>
+              <div>
+                <HiOutlineArrowCircleRight className="size-[24px] text-[#9B5DFF] mr-2" />
+              </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </>
   );

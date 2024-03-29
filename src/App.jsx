@@ -92,7 +92,7 @@ function App() {
         </div>
 
         {/* middle */}
-        <div className="w-2/3">
+        <div className="w-2/3 shrink-0">
           {/* location and search */}
           <div className="flex ">
             {/* location */}
@@ -389,7 +389,7 @@ function App() {
           </div>
 
           {/* Brand logo */}
-          <div className="flex justify-between mt-6 ">
+          <div className="flex justify-between gap-x-1 mt-6 ">
             <div className="w-[172.14px] h-[171px]">
               <img
                 src="./public/assets/img9.png"
@@ -431,7 +431,7 @@ function App() {
 
           {/* Activites */}
           <div className="flex mb-[10rem] justify-between">
-            <div className="h-[335px] w-[259px] bg-[#F6F6F6] mt-4 rounded-[16px] mr-8 ">
+            <div className="h-auto w-[259px] bg-[#F6F6F6] mt-4 rounded-[16px] mr-8 ">
               <div>
                 <div className="h-[260px]">
                   <img
@@ -450,7 +450,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="h-[335px] w-[259px] bg-[#F6F6F6] mt-4 rounded-[16px] mr-8 ">
+            <div className="h-auto w-[259px] bg-[#F6F6F6] mt-4 rounded-[16px] mr-8 ">
               <div>
                 <div className="h-[260px]">
                   <img
@@ -470,7 +470,7 @@ function App() {
               </div>
             </div>
 
-            <div className="h-[335px] w-[259px] bg-[#F6F6F6] mt-4 rounded-[16px] mr-8 ">
+            <div className="h-auto w-[259px] bg-[#F6F6F6] mt-4 rounded-[16px] mr-8 ">
               <div>
                 <div className="h-[260px]">
                   <img
@@ -494,7 +494,7 @@ function App() {
         </div>
 
         {/* right sidebar */}
-        <div className="flex w-1/6">
+        <div className="flex w-5/24">
           <div className=" flex flex-col ">
             <div className=" mt-[3rem] flex justify-end">
               <img
